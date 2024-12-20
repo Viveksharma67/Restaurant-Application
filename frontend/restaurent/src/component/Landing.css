@@ -1,0 +1,236 @@
+.landbody {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+                url('https://burst.shopifycdn.com/photos/indian-food-on-restaurant-table.jpg?exif=0&iptc=0');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 40px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Brush Script MT', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.logo h1{
+    font-family: 'Brush Script MT', cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.sign {
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.signup {
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    transition: 0.2s ease;
+}
+
+.signup:hover {
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 200, 0);
+}
+
+.login {
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    transition: 0.2s ease;
+    background-color: transparent;
+    color: #fff;
+}
+
+.login:hover {
+    color: rgb(53, 66, 204);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    flex: 1;
+}
+
+.text-content {
+    margin-left: 40px;
+    max-width: 40%;
+}
+
+.text-content h2 {
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-content p {
+    margin: 20px 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.book-table {
+    background-color: rgb(255, 165, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 180px;
+}
+
+.book-table:hover {
+    background-color: rgb(14, 14, 14);
+}
+
+.image-content {
+    margin-right: 100px;
+    width: 550px; /* Size of the circular frame */
+    height: 550px; /* Size of the circular frame */
+    border-radius: 50%; /* Makes the container circular */
+    overflow: hidden; /* Ensures the image doesn't overflow outside the circle */
+    position: relative;
+    z-index: 2;
+}
+
+.image-content img {
+    width: 100%; /* Ensures the image fills the circle */
+    height: 100%; /* Ensures the image fills the circle */
+    object-fit: cover; /* Ensures the image covers the entire circle */
+    transform: scale(1.2); /* Enlarges the image inside the circle */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.6); /* Centers and enlarges the image */
+}
+.circular-div {
+    width: 500px; /* Adjust width as needed */
+    height: 500px; /* Adjust height as needed */
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute; /* Position it relative to its nearest positioned ancestor */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the right */
+    z-index: 1;
+    border: 3px solid rgb(247, 236, 236); /* Optional: Add border to make it visible */
+    transform: translate(-40%, -60%); /* Move half of the div outside the screen */
+  }
+  
+  .circular-div2{
+    width: 900px; /* Adjust width as needed */
+    height: 900px; /* Adjust height as needed */
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute; /* Position it relative to its nearest positioned ancestor */
+    bottom: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+    z-index: 1;
+    border: 3px solid rgb(247, 236, 236); /* Optional: Add border to make it visible */
+    transform: translate(50%, 60%); /* Move half of the div outside the screen */
+  }
+
+@media (max-width: 480px) {
+    .landbody{
+        width: 100%;
+        min-height: screen;
+    }
+
+    .logo {
+        margin-left: 10px;
+        font-size: 20px;
+        z-index: 2;
+    }
+    .sign{
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .signup{
+        width: 55px;
+        height: 30px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -30px;
+    }
+    .login{
+        margin-right: 10px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        min-height: 400px;
+        width: 100%;
+        z-index: 8;
+    }
+    
+    .text-content {
+        max-width: 100%; /* Ensure full width */
+        height: 480px;
+        margin-left: 0;
+        box-sizing: border-box; /* Include padding and border in width */
+        z-index: 8;
+    }
+    
+    
+    
+    .text-content h2 {
+        font-size: 45px;
+        line-height: 45px;
+        width: fit-content;
+    }
+
+    .text-content p {
+        font-size: 15px;
+    }
+
+    .book-table {
+        width: 120px;
+        font-size: 12px;
+        margin-bottom: 10px;
+        z-index: 9;
+    }
+
+    .image-content {
+        width: 200px;
+        height: 250px;
+        margin-right: -40px;
+        border-radius: 100px;
+        z-index: 7;
+    }
+
+    .circular-div, .circular-div2 {
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+    }
+}

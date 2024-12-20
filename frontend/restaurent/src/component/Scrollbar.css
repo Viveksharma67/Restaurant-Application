@@ -1,0 +1,43 @@
+.scrollbar-container {
+    background-color: #222; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .menu-title {
+    color: #FFA500; /* Orange text */
+    margin-bottom: 10px;
+  }
+  
+  .scrollbar {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: #FFA500 #333; /* Orange scroll thumb */
+    scrollbar-width: thin;
+  }
+  
+  .scrollbar::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #FFA500; /* Orange scroll thumb */
+    border-radius: 10px;
+  }
+  
+  .scroll-item {
+    min-width: 150px;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .scroll-item:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
