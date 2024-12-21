@@ -123,6 +123,4 @@ app.post('/add-to-cart', async (req, res) => {
     return res.status(500).json({ message: 'Failed to add item to cart.' });
   }
 });
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+app.listen(port);
